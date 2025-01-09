@@ -1,4 +1,4 @@
-const FIGMA_API_TOKEN = "figd_rOUI2ERUzdAeT6Ig4J_2jdcFXRGyPfcmzuHQtiMD";
+const FIGMA_API_TOKEN = "add_your_figma_key_here";
 
 document.getElementById("fileUpload").addEventListener("change", async (event) => {
   const file = event.target.files[0];
