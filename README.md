@@ -18,3 +18,7 @@ A web tool that converts Figma, PNG, JPEG, or PDF files into Canvas.js objects. 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/file-to-canvasjs-converter.git
+
+2. Get Your Figma token
+   ```bash
+   figma.com
