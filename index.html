@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File to Canvas.js Converter</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <h1 class="text-center mb-4">File to Canvas.js Converter</h1>
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="fileUpload" class="form-label">Upload your file (Figma, PNG, JPEG, or PDF):</label>
+          <input type="file" id="fileUpload" class="form-control" accept=".png,.jpeg,.jpg,.pdf,.fig">
+        </div>
+        <div class="mt-4">
+          <h5>Canvas Preview</h5>
+          <canvas id="previewCanvas"></canvas>
+        </div>
+        <div class="mt-4">
+          <h5>Generated Canvas.js Code</h5>
+          <textarea id="canvasCode" class="form-control" rows="8" readonly></textarea>
+          <button id="copyCodeButton" class="btn btn-primary mt-2 w-100">Copy Canvas.js Code</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <!-- Canvg for SVG Rendering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvg/3.0.10/umd.js"></script>
+  <!-- Main JS -->
+  <script src="app.js"></script>
+</body>
+</html>
